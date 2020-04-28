@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Разработка сайтов</title>	
+	<script src="scripts/jquery-3.4.1.min.js"></script>
+	<script src="scripts/jquery.inputmask.min.js"></script>
+	<script src="scripts/jquery.validate.min.js"></script>
+	<script src="scripts/swiper.min.js"></script>
+	<script src="scripts/callback.js"></script>
+	<script src="scripts/script.js"></script>
+	<!-- Styles -->
+	<link rel="stylesheet" href="styles/swiper.min.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/header.css">
+	<link rel="stylesheet" href="styles/first.css">
+	<link rel="stylesheet" href="styles/skills.css">
+	<link rel="stylesheet" href="styles/examples.css">
+	<link rel="stylesheet" href="styles/price.css">
+	<link rel="stylesheet" href="styles/footer.css">
+	<link rel="stylesheet" href="styles/callback.css">
+	<link rel="stylesheet" media="screen and (max-width: 1900px)" href="styles/media.css">
+</head>
+<body class="body">
+	<div class="form__container">
+		<div class="callback__wrapper">
+			<div class="form__container_close">&#215;</div>
+			<form class="callback__form" action="scripts/mail.php" method="POST">
+				<input type="hidden" name="project_name" value="Bulkina">
+				<input type="hidden" name="admin_email" value="soul911@bk.ru">
+				<input type="hidden" name="form_subject" value="Хочу сайт немедля!">
+				<div class="callback__title">Обратный звонок</div>
+				<input class="callback__input" type="text" name="Имя" placeholder="Ваше имя">
+				<input class="callback__input" type="tel" name="Телефон" placeholder="+7 (___) ___-____">
+				<button class="button_submit" type="submit" aria-label="Отправить">Отправить</button>
+				<div class="callback__desc">Нажимая на кнопку, вы даете согласие на обработку персональных данных</div>
+			</form>
+		</div>
+	</div>
+	<header class="header flex container">
+		<div>
+			<input class="header-menu__mobile" type="checkbox" name="Меню">
+			<nav class="header-menu">
+				<ul class="header-menu__list">
+					<li class="header-menu__item"><a href="#skills" class="link">Услуги</a></li>
+					<li class="header-menu__item"><a href="#examples" class="link">Портфолио</a></li>
+					<li class="header-menu__item"><a href="#price" class="link">Стоимость</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="header__tel"><a href="tel:+70001230000" class="link">+7 (499) 995-55-77</a></div>
+			<button class="header__button button_light callback" type="submit" aria-label="Заказать звонок"></button>	
+	</header>
+	<main class="main">
+		<div class="first">
+			<div class="first__tag first__bracestag bracestag"></div>
+			<div class="first__tag first__hashtag hashtag"></div>
+			<div class="first__tag first__divtag divtag"></div>
+			<div class="first__tag first__divtwin divtwin"></div>
+			<div class="first__tag first__slashtag slashtag"></div>
+			<div class="flex container first__container">
+				<div class="first__text">
+					<h1 class="first__title">Александра Булкина</h1>
+					<h2 class="first__subtitle">Frontend-разработка и&nbsp;веб&#8209;верстка</h2>
+					<a href="#price" class="first__button button_red">Узнать больше</a>
+				</div>
+				<div class="first__box">
+					<img src="img/sandra.png" class="first__img" alt="Саша Булкина">
+				</div>
+				<div class="main__blot"></div>
+			</div>
+		</div>
+		<div id="skills" class="skills">
+			<div class="container container_padding skills__container">
+				<div class="title">Что я делаю</div>
+				<div class="skills__list">
+					<div class="skills__item">
+						<div class="skills__ico skills__sites"></div>
+						<div class="skills__text">Верстка лендинг–страниц и сайтов любой сложности</div>
+					</div>
+					<div class="skills__item">
+						<div class="skills__ico skills__devices"></div>
+						<div class="skills__text">Адаптивная верстка под все браузеры и устройства</div>
+					</div>
+					<div class="skills__item">
+						<div class="skills__ico skills__develop"></div>
+						<div class="skills__text">Frontend–разработка и программирование</div>
+					</div>
+					<div class="skills__item">
+						<div class="skills__ico skills__correct"></div>
+						<div class="skills__text">Исправление и доработка имеющейся верстки</div>
+					</div>
+				</div>
+				<button class="skills__button button_red callback" type="submit" aria-label="Узнать стоимость"></button>
+			</div>
+		</div>
+		<div id="examples" class="examples">
+			<div class="container container_padding">
+				<div class="title">Примеры моих&nbsp;работ</div>
+
+				<div class="slider">
+				  <div class="slider__wrapper">
+			      <div class="slider__item">
+		        	<img class="slider__img" src="img/slider/water.jpg" alt="water">
+		        	<p class="slider__desc">Сайт-визитка водной стихии</p>
+				    </div>
+			      <div class="slider__item">
+	  	      	<img class="slider__img" src="img/slider/ocean.jpg" alt="ocean">
+		        	<p class="slider__desc">Ребрендинг океана</p>
+			      </div>
+			      <div class="slider__item">
+				     	<img class="slider__img" src="img/slider/winter.jpg" alt="winter">
+			       	<p class="slider__desc">Разработка сайта зимних гор</p>
+					  </div>
+					  <div class="slider__item">
+			       	<img class="slider__img" src="img/slider/autumn.jpg" alt="autumn">
+			       	<p class="slider__desc">Лендинг для осени</p>
+			      </div>
+			    </div>
+				</div> 
+				<button class="slider__arrow slider__arrow_prev" aria-label="Предыдущий слайд"></button>
+				<button class=" slider__arrow slider__arrow_next" aria-label="Следующий слайд"></button>
+				<div class="slider__pagination"></div>
+				<button class="examples__button button_red callback" type="submit" aria-label="Заказать проект"></button>
+			</div>
+		</div>
+		<div id="price" class="price">
+			<div class="price__tag price__bracestag bracestag"></div>
+			<div class="price__tag price__bracestwin bracestwin"></div>
+			<div class="price__tag price__hashtag hashtag"></div>
+			<div class="price__tag price__divtag divtag"></div>
+			<div class="price__tag price__slashtag slashtag"></div>
+			<div class="container container_padding">
+				<div class="price__wrapper">
+					<div class="price__text">Адаптивная вёрстка под все устройства и&nbsp;браузеры от&nbsp;1000 рублей всего за&nbsp;4&nbsp;часа.</div>
+					<p class="price__desc">Срок и&nbsp;стоимость могут отличаться от&nbsp;заявленных и&nbsp;рассчитываются индивидуально в&nbsp;зависимости от&nbsp;сложности&nbsp;задач.</p>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="flex container container_padding footer__container">
+			<nav class="footer-menu">
+				<ul class="footer-menu__list">
+					<li class="footer-menu__item"><a href="#skills" class="footer__link link">Услуги</a></li>
+					<li class="footer-menu__item"><a href="#examples" class="footer__link link">Портфолио</a></li>
+					<li class="footer-menu__item"><a href="#price" class="footer__link link">Стоимость</a></li>
+				</ul>
+			</nav>
+			<address class="footer__contacts">
+				<a href="tel:+70001230000" class="contacts__text contacts__ico ico_phone link">+7 (499) 995-55-77</a>
+				<a href="mailto:sasha@bulkina.ru" class="contacts__text contacts__ico ico_email link">sasha@bulkina.ru</a>
+			</address>
+			<address class="social-link">
+				<button class="footer__button button_light callback" type="submit" aria-label="Заказать звонок"></button>
+				<ul class="flex social-link_list">
+					<li><a href="https://vk.com/" class="social-link__ico ico_vk link"></a></li>
+					<li><a href="https://facebook.com/" class="social-link__ico ico_fb link"></a></li>
+					<li><a href="https://twitter.com/" class="social-link__ico ico_twit link"></a></li>
+					<li><a href="https://instagram.com/" class="social-link__ico ico_inst link"></a></li>
+				</ul>
+			</address>
+		</div>
+		<small class="copyright">&copy; Александра Булкина, 2019-<span class="year-now"></span>
+		</small>
+	</footer>
+</body>
+</html>

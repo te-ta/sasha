@@ -1,0 +1,229 @@
+/* Fonts */
+
+/* roboto-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v20-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('../fonts/roboto-v20-latin_cyrillic-regular.eot?.iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-v20-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-v20-latin_cyrillic-regular.svg.Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-500 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto-v20-latin_cyrillic-500.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+       url('../fonts/roboto-v20-latin_cyrillic-500.eot?.iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-v20-latin_cyrillic-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v20-latin_cyrillic-500.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-v20-latin_cyrillic-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-v20-latin_cyrillic-500.svg.Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v20-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+       url('../fonts/roboto-v20-latin_cyrillic-700.eot?.iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-v20-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v20-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-v20-latin_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-v20-latin_cyrillic-700.svg.Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-900 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/roboto-v20-latin_cyrillic-900.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Black'), local('Roboto-Black'),
+       url('../fonts/roboto-v20-latin_cyrillic-900.eot?.iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-v20-latin_cyrillic-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v20-latin_cyrillic-900.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-v20-latin_cyrillic-900.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-v20-latin_cyrillic-900.svg.Roboto') format('svg'); /* Legacy iOS */
+}
+
+/* LigatureSymbols for icons */
+
+@font-face {
+    font-family: 'LigatureSymbols';
+    src: url('../fonts/LigatureSymbols-2.11.eot');
+    src: url('../fonts/LigatureSymbols-2.11.eot?.iefix') format('embedded-opentype'),
+         url('../fonts/LigatureSymbols-2.11.woff') format('woff'),
+         url('../fonts/LigatureSymbols-2.11.ttf') format('truetype'),
+         url('../fonts/LigatureSymbols-2.11.svg.LigatureSymbols') format('svg');
+    src: url('../fonts/LigatureSymbols-2.11.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Main styles */
+
+*:focus {
+	outline: none;
+}
+
+*, 
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.body {
+	min-width: 300px;
+	-webkit-text-size-adjust: 100%;
+	font-family: 'Roboto';
+	font-size: 20px;
+  background-color: #fbfbfb;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+  padding-bottom: 4px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(currentColor), to(currentColor));
+  background-image: -o-linear-gradient(currentColor, currentColor);
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  -webkit-transition: background-size .3s;
+  -o-transition: background-size .3s;
+  transition: background-size .3s;
+}
+
+	.link:hover,
+  .link:focus {
+		color: #fc557c;
+	}
+
+  .link:active {
+    opacity: 0.7;
+  }
+
+.container {
+  position: relative;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.container_padding {
+  padding: 100px 0;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header a:hover,
+.footer__contacts a:hover,
+.footer-menu a:hover,
+.header a:focus,
+.footer__contacts a:focus,
+.footer-menu a:focus {
+  background-size: 100% 1px;
+}
+
+.title {
+  margin-bottom: 90px;
+  font-size: 54px;
+  font-weight: 900;
+}
+
+
+/*  Buttons & buttons to point */
+
+.button_red {
+  margin-top: 95px;
+  width: 270px;
+  border: none;
+  background-color: #ff4e2e;
+  text-align: center;
+  font-size: 18px;
+  line-height: 54px;
+  color: #fff;
+  cursor: pointer;
+}
+
+  .button_red:hover,
+  .button_red:focus {
+    text-decoration: none;
+    background-color: #ff8f5a;
+    color: #fff;
+  }
+
+  .button_red:active {
+    opacity: 0.7;
+  }
+
+.button_light {
+  width: 207px;
+  height: 45px;
+  border: 1px solid #fc557c;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button_light::before {
+  content: 'Заказать звонок'; 
+  font-size: 16px;
+  line-height: 45px;
+  color: #f53f4f;
+}
+
+.button_light:hover, 
+.button_light:hover::before,
+.button_light:focus, 
+.button_light:focus::before  {
+  border-color: #000;
+  color: #000;
+}
+
+.button_light:active,
+.button_light:active::before {
+  border-color: #999;
+  color: #999;
+}
+
+
+/* tags in top & price blocks  */
+
+.bracestag::before, 
+.bracestwin::before {
+  content: "{ }";
+}
+
+.hashtag::before {
+  content: "#";
+}
+
+.divtag::before, 
+.divtwin::before {
+  content: "<div>";
+}
+
+.slashtag::before {
+  content: "</>";
+}

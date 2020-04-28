@@ -1,0 +1,122 @@
+/*  fourth block  */
+
+.price {
+	position: relative;
+	background-image: -o-linear-gradient(75deg, #ff8f5a 25%, #ff2f96);
+	background-image: linear-gradient(15deg, #ff8f5a 25%, #ff2f96);
+}
+
+.price__wrapper {
+	max-width: 970px;
+	margin: 0 auto;
+}
+
+.price__text {
+  font-size: 44px;
+  line-height: 60px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.price__desc {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	max-width: 700px;
+	margin-top: 40px;
+	line-height: 30px;
+	color: #fff;
+}
+
+.price__desc::before, 
+.price__text::after {
+	content: '*\a0';
+	color: #fff;
+}
+
+
+/* tags in price block  */
+
+.price__tag {
+	position: absolute;
+	font-weight: bold;
+	color: #fff;
+	-webkit-animation: go-resize ease infinite alternate;
+	        animation: go-resize ease infinite alternate;
+} 
+
+.price__bracestag {
+	top: 30px;
+  left: 8%;
+	font-size: 50px;
+	-webkit-transform: rotate(35deg);
+	    -ms-transform: rotate(35deg);
+	        transform: rotate(35deg);
+	-webkit-animation-duration: 14s;
+	        animation-duration: 14s;
+}
+
+.price__bracestwin {
+	bottom: 90px;
+	right: 10%;
+	font-size: 35px;
+	-webkit-transform: rotate(-15deg);
+	    -ms-transform: rotate(-15deg);
+	        transform: rotate(-15deg);
+	-webkit-animation-duration: 15s;
+	        animation-duration: 15s;
+}
+
+.price__hashtag {
+	left: 15%;
+	bottom: 60px;
+	font-size: 57px;
+	-webkit-transform: rotate(20deg);
+	    -ms-transform: rotate(20deg);
+	        transform: rotate(20deg);
+	-webkit-animation-duration: 15s;
+	        animation-duration: 15s;
+}
+
+.price__divtag {
+	bottom: 40px;
+	right: 30%;
+	font-size: 40px;
+	-webkit-transform: rotate(20deg);
+	    -ms-transform: rotate(20deg);
+	        transform: rotate(20deg);
+	-webkit-animation-duration: 13s;
+	        animation-duration: 13s;
+}
+
+.price__slashtag {
+	top: 80px;
+	right: 20%;
+	font-size: 40px;
+	-webkit-transform: rotate(-35deg);
+	    -ms-transform: rotate(-35deg);
+	        transform: rotate(-35deg);
+	-webkit-animation-duration: 16s;
+	        animation-duration: 16s;
+}
+
+
+/* price tags animation  */
+
+@keyframes go-resize {
+  from {
+  	opacity: 0;
+  }
+  to {
+  	opacity: 1;
+  }
+}
+
+	@-webkit-keyframes go-resize {
+  from {
+  	opacity: 0;
+  }
+  to {
+  	opacity: 1;
+  }
+}

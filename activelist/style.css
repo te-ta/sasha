@@ -1,0 +1,151 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	min-width: 1000px;
+	font-family: Arial;
+	background-color: #f5f5f5;
+	box-sizing: border-box;
+}
+
+*, 
+::before,
+::after {
+	box-sizing: inherit;
+}
+
+*:focus {
+	outline: none;
+}
+
+p {
+		margin-top: 28px;
+		font-size: 14px;
+		color: #8993ad;
+		display: inline-block;
+	}
+
+h2 {
+	font-size: 21px;
+	margin: 0 0 30px;
+	font-weight: normal;
+}
+
+h3 {
+	font-size: 16px;
+	margin: 0;
+	padding: 18px 20px;
+	font-weight: normal;
+	border-bottom: 1px solid #f7f7f7;
+}
+
+main {
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+main section {
+	width: 470px;
+	margin-top: 65px;
+}
+
+#column-left {
+	float: left;
+}
+
+.new-list {
+	background-color: #fff;
+	margin-bottom:20px;
+	position: relative;
+}
+
+	.del-button {
+		border: none;
+		margin-left: 20px;
+		width: 14px;
+		height: 14px;
+		background: url('img/ico-del.png') center no-repeat;
+		cursor: pointer;
+	}
+
+	.hide-button {
+		position: absolute;
+		right: 24px;
+		top: 20px;
+		border: none;
+		width: 14px;
+		height: 14px;
+		background-image: url('img/ico-arrow-down.png');
+		background-color: #fff;
+		background-position: center bottom;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+
+	.more-button {
+		background-image: url('img/ico-arrow-up.png');
+	}
+
+	.list-text {
+		display: block;
+		margin: 11px 20px 12px;
+		padding-bottom: 62px;
+	}
+
+	.hide-text {
+		display: none;
+	}
+
+#column-right {
+	float: right;
+}
+
+#add-action {
+	background-color: #fff;
+	padding: 0 40px 36px;
+}
+
+	.action-name {
+		height: 45px;
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	.action-text {
+		height: 230px;
+		font-size: 14px;
+	}
+
+	.form-style {
+		width: 100%;
+		padding: 9px;
+		border: 1px solid #ebebeb;
+		background-color: #fcfcfc;
+	}
+
+	.empty-field {
+		background-color: #ffcccc;
+	}
+
+	#add-button {
+		width: 224px;
+		height: 55px;
+		font-size: 16px;
+		color: #fff;
+		background-color: #2174fd;
+		margin-top: 30px;
+		border: none;
+	}
+
+	
+
+
+
+		
+
+
+
+
+
+
+

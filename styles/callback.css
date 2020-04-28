@@ -1,0 +1,134 @@
+/*  Popup callback  */
+
+.dont-move {
+  overflow: hidden;
+}
+
+.form__container {
+  position: fixed;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffffcc;
+  z-index: 40;
+}
+
+.form__container_close {
+  position: absolute;
+  top: 7px;
+  right: 15px;
+  font-size: 50px;
+  line-height: 40px;
+  color: #ffffff77;
+}
+
+  .form__container_close:hover {
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .form__container_close:active {
+    opacity: 0.7;
+  }
+  
+.callback__wrapper {
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #ff8f5a;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
+
+.callback__title {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.callback__input {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 26px;
+  background-color: #ff8f5a;
+  border: none;
+  border-bottom: 1px solid #ffffff99;
+  color: #fff; 
+  -webkit-appearance: none;
+    -moz-appearance: none;
+        appearance: none;
+}
+
+  .callback__input:focus {
+    border-bottom: 1px solid #fff;
+  }
+
+  .callback__input::-webkit-input-placeholder {
+    color: #ffffff99;
+  }
+  .callback__input::-moz-placeholder {
+    color: #ffffff99;
+  }
+  .callback__input:-ms-input-placeholder {
+    color: #ffffff99;
+  } 
+  .callback__input::-ms-input-placeholder {
+    color: #ffffff99;
+  }
+  .callback__input::placeholder {
+    color: #ffffff99;
+  }
+
+  .callback__input:-webkit-autofill,
+  .callback__input:-webkit-autofill:hover, 
+  .callback__input:-webkit-autofill:focus, 
+  .callback__input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #ff8f5a inset !important;
+  } 
+  .callback__input:-webkit-autofill {
+    -webkit-text-fill-color: #fff !important;
+  }
+
+.error {
+  background-color: #ff000099 !important;
+}
+
+.callback__desc {
+  color: #fff;
+}
+
+.button_submit {
+  width: 100%;
+  margin: 10px 0;
+  background-color: #fff;
+  border: none;
+  font-size: 16px;
+  line-height: 45px;
+  color: #ff8f5a;
+  cursor: pointer;
+}
+
+.button_submit:hover,
+.button_submit:focus {
+  background-color: #ff2f96;
+  color: #fff;
+}
+
+.button_submit:active {
+  opacity: 0.7;
+}
+
+.callback__done {
+  margin-top: 85px;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 2;
+}
+

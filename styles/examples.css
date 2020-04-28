@@ -1,0 +1,90 @@
+/*  Third bkock  */
+
+.examples {
+	background-color: #fbfbfb;
+	text-align: center;
+}
+
+.examples__button::before {
+  content: 'Заказать проект'; 
+}
+
+
+/*  Slider  */
+
+.slider {
+	position: relative;
+	overflow-x: hidden;
+}
+
+.slider__wrapper {
+	display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider__img {
+	width: inherit;
+}
+
+.slider__desc {
+	margin-top: 40px;
+	font-weight: 500;
+	color: #8993ad;
+}
+
+.slider__arrow {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	position: absolute;
+	top: 50%;
+	width: 60px;
+	height: 60px;
+	margin-top: -64px;
+	background: url(../img/icon-arrow.png) center no-repeat;
+	border: none;
+	border-radius: 30px;
+	-webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, .2);
+	        box-shadow: 0 0 20px 0 rgba(0, 0, 0, .2);
+	cursor: pointer;
+	z-index: 1;	
+}
+
+.slider__arrow:hover,
+.slider__arrow:focus {
+	background: url(../img/icon-arrow-focus.png) center no-repeat;
+}
+
+.slider__arrow_prev {
+	left: -30px;
+}
+
+.slider__arrow_next {
+	right: -30px;
+	-webkit-transform: rotate(180deg);
+	    -ms-transform: rotate(180deg);
+	        transform: rotate(180deg);
+}
+
+.slider__pagination {
+	display: none;
+	position: relative;
+	margin-top: 100px;
+  justify-content: center;
+}
+
+.pagination__item {
+	width: 18px;
+	height: 18px;
+	margin: 0 15px;
+	-ms-flex-negative: 0;
+	    flex-shrink: 0;
+	border-radius: 50%;
+	background: #ededed;
+}
+	
+.pagination__item_active {
+  background: #ff4e2e;
+}
+

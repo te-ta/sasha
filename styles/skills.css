@@ -1,0 +1,106 @@
+/*  Second block  */
+
+.skills {
+	background-color: #fff;
+}
+
+.skills__container {
+	text-align: center;
+}
+
+.skills__button::before {
+  content: 'Узнать стоимость'; 
+}
+
+.skills__list {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: space-evenly;
+	    -ms-flex-pack: space-evenly;
+	        justify-content: space-evenly;
+	        	position: relative;
+  overflow: hidden;
+}
+
+.skills__item {
+	margin: 20px;
+	width: 35%;
+}
+
+.skills__ico {
+	width: 80px;
+	height: 74px;
+	margin: 0 auto 25px;
+
+}
+
+.skills__sites {
+	background: url(../img/icon-sites.png) center no-repeat;
+	background-size: contain;
+}
+
+.skills__devices {
+	background: url(../img/icon-devices.png) center no-repeat;
+	background-size: contain;
+}
+
+.skills__develop {
+	background: url(../img/icon-develop.png) center no-repeat;
+	background-size: contain;
+}
+
+.skills__correct {
+	background: url(../img/icon-correct.png) center no-repeat;
+	background-size: contain;
+}
+
+.skills__text {
+	font-size: 19px;
+	color: #8993ad;
+}
+
+
+/*  Shine  */
+
+.skills__list::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  top: -50%;
+  right: -50%;
+  bottom: -50%;
+  left: -50%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255,255,255,.1)), to(rgba(255,255,255,.5)));
+  background: -o-linear-gradient(left, rgba(255,255,255,.1), rgba(255,255,255,.5));
+  background: linear-gradient(90deg, rgba(255,255,255,.1), rgba(255,255,255,.5));
+  -webkit-animation: go-shine 8s forwards infinite;
+          animation: go-shine 8s forwards infinite; 
+  -webkit-transform: skewX(-45deg); 
+      -ms-transform: skewX(-45deg); 
+          transform: skewX(-45deg);
+}
+
+@keyframes go-shine {
+  0% {
+  	left: -50%;
+  }
+  30% {
+  	left: 150%;
+  }
+  100% {
+  	left: 150%;
+  }
+}
+
+@-webkit-keyframes go-shine {
+  0% {
+  	left: -50%;
+  }
+  30% {
+  	left: 150%;
+  }
+  100% {
+  	left: 150%;
+  }
+}
