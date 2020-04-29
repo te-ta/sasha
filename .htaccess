@@ -1,0 +1,5 @@
+# dont go to .git
+RedirectMatch 404 /\.git
+
+# dont go to all dot files
+RedirectMatch 404 /\..*$
