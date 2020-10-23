@@ -1,3 +1,5 @@
+'use strict';
+
 $(function(){
 	function closePopup(){
 		$('.form__container').fadeOut(400);

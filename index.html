@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+  <title>Разработка сайтов</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Разработка сайтов</title>	
-	<script src="scripts/jquery-3.4.1.min.js"></script>
-	<script src="scripts/jquery.inputmask.min.js"></script>
-	<script src="scripts/jquery.validate.min.js"></script>
-	<script src="scripts/swiper.min.js"></script>
-	<script src="scripts/callback.js"></script>
-	<script src="scripts/script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="180x180" href="ico/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
+  <link rel="manifest" href="ico/site.webmanifest">
+  <link rel="mask-icon" href="ico/safari-pinned-tab.svg" color="#5bbad5">
 	<!-- Styles -->
 	<link rel="stylesheet" href="styles/swiper.min.css">
 	<link rel="stylesheet" href="styles/main.css">
@@ -20,7 +21,14 @@
 	<link rel="stylesheet" href="styles/price.css">
 	<link rel="stylesheet" href="styles/footer.css">
 	<link rel="stylesheet" href="styles/callback.css">
-	<link rel="stylesheet" media="screen and (max-width: 1900px)" href="styles/media.css">
+  <link rel="stylesheet" media="screen and (max-width: 1900px)" href="styles/media.css">
+  <!-- Scripts -->
+  <script src="scripts/jquery-3.4.1.min.js"></script>
+	<script src="scripts/jquery.inputmask.min.js"></script>
+	<script src="scripts/jquery.validate.min.js"></script>
+	<script src="scripts/swiper.min.js"></script>
+	<script src="scripts/callback.js" defer></script>
+	<script src="scripts/script.js" defer></script>
 </head>
 <body class="body">
 	<div class="form__container">
@@ -28,7 +36,7 @@
 			<div class="form__container_close">&#215;</div>
 			<form class="callback__form" action="scripts/mail.php" method="POST">
 				<input type="hidden" name="project_name" value="Bulkina">
-				<input type="hidden" name="admin_email" value="soul911@bk.ru">
+				<input type="hidden" name="admin_email" value="sasha@bulkina.ru">
 				<input type="hidden" name="form_subject" value="Хочу сайт немедля!">
 				<div class="callback__title">Обратный звонок</div>
 				<input class="callback__input" type="text" name="Имя" placeholder="Ваше имя">
@@ -40,8 +48,9 @@
 		</div>
 	</div>
 	<header class="header flex container">
-		<div>
-			<input class="header-menu__mobile" type="checkbox" name="Меню">
+		<div class="header-menu__wrapper">
+			<input type="checkbox" class="menu-mobile__checkbox" id="checkbox">
+			<label for="checkbox" class="menu-mobile"><span class="menu-mobile__line"></span></label>
 			<nav class="header-menu">
 				<ul class="header-menu__list">
 					<li class="header-menu__item"><a href="#skills" class="link">Услуги</a></li>
@@ -54,7 +63,7 @@
 			<button class="header__button button_light callback" type="submit" aria-label="Заказать звонок"></button>	
 	</header>
 	<main class="main">
-		<div class="first">
+		<section class="first">
 			<div class="first__tag first__bracestag bracestag"></div>
 			<div class="first__tag first__hashtag hashtag"></div>
 			<div class="first__tag first__divtag divtag"></div>
@@ -71,10 +80,10 @@
 				</div>
 				<div class="main__blot"></div>
 			</div>
-		</div>
-		<div id="skills" class="skills">
+		</section>
+		<section id="skills" class="skills">
 			<div class="container container_padding skills__container">
-				<div class="title">Что я делаю</div>
+				<h3 class="title">Что я делаю</h3>
 				<div class="skills__list">
 					<div class="skills__item">
 						<div class="skills__ico skills__sites"></div>
@@ -95,11 +104,10 @@
 				</div>
 				<button class="skills__button button_red callback" type="submit" aria-label="Узнать стоимость"></button>
 			</div>
-		</div>
-		<div id="examples" class="examples">
+		</section>
+		<section id="examples" class="examples">
 			<div class="container container_padding">
-				<div class="title">Примеры моих&nbsp;работ</div>
-
+				<h3 class="title">Примеры моих&nbsp;работ</h3>
 				<div class="slider">
 				  <div class="slider__wrapper">
 			      <div class="slider__item">
@@ -125,8 +133,9 @@
 				<div class="slider__pagination"></div>
 				<button class="examples__button button_red callback" type="submit" aria-label="Заказать проект"></button>
 			</div>
-		</div>
-		<div id="price" class="price">
+		</section>
+		<section id="price" class="price">
+      <h3 class="visually-hidden">Стоимость</h3>
 			<div class="price__tag price__bracestag bracestag"></div>
 			<div class="price__tag price__bracestwin bracestwin"></div>
 			<div class="price__tag price__hashtag hashtag"></div>
@@ -138,7 +147,7 @@
 					<p class="price__desc">Срок и&nbsp;стоимость могут отличаться от&nbsp;заявленных и&nbsp;рассчитываются индивидуально в&nbsp;зависимости от&nbsp;сложности&nbsp;задач.</p>
 				</div>
 			</div>
-		</div>
+		</section>
 	</main>
 	<footer class="footer">
 		<div class="flex container container_padding footer__container">
